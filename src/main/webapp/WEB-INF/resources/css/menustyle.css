@@ -1,0 +1,222 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('./resources/image/aa.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+
+header {
+  
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 100px;
+    position: relative;
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-right: 60px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a {
+    background-color: #fff;
+    color: #000;
+}
+
+.logo img {
+    float: left;
+    width: 150px;
+    height: auto;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.title h1 {
+    color: #fff;
+    font-size: 85px;
+}
+
+.button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.btn {
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    color: #fff;
+    transition: 0.6s ease;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.sub-menu {
+    display: none;
+    top: 6%;
+    position: relative;
+}
+
+.sub-menu ul {
+    position: absolute;
+}
+
+.main ul li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background-color: rgb(0,45,117);
+    margin-top: 12px;
+    margin-left: -8px;
+}
+
+.main ul li:hover .sub-menu ul {
+    display: block;
+    margin: 6px;
+}
+
+.main ul li:hover .sub-menu ul li {
+    width: 75px;
+    padding: 5px;
+    border-bottom: 1px #fff;
+    background: transparent;
+    transition: 0.4s ease;
+    text-align: left;
+    border-radius: 0;
+}
+
+.main ul li:hover .sub-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.card-item img {
+    width: 200px; 
+    height: 150px; 
+    object-fit: cover; 
+}
+
+.nav-buttons {
+    flex-direction: column; 
+    align-items: center;
+}
+
+
+.container {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1 1 calc(33.333% - 40px);
+    box-sizing: border-box;
+}
+
+.card-item img {
+    border-radius: 8px;
+}
+
+.card-item p {
+    margin: 10px 0;
+}
+
+.card-item button {
+    padding: 10px 20px;
+    border: none;
+    background-color: green;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.card-item button:hover {
+    background-color: darkgreen;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Banner Styles */
+.banner {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.banner.about-banner {
+    background-image: url('../image/banner.jpeg'); 
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+}
+

@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar ul {
+    list-style: none; /* Remove bullet points from the list */
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 18px;
+    text-transform: uppercase;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    transition: 0.3s; /* Smooth transition for hover effects */
+}
+
+.navbar ul li a:hover {
+    color: orangered; /* Change text color on hover */
+}
+
+.content {
+    position: relative;
+    color: #fff;
+    text-align: center; /* Center text */
+    max-width: 800px; /* Limit the width */
+    padding: 20px; /* Add some padding */
+    margin: 0 auto; /* Center the content horizontally */
+}
+
+.content h1 {
+    font-size: 50px; /* Main heading size */
+    margin-bottom: 20px; /* Space below heading */
+}
+
+.content h2 {
+    font-size: 36px; /* Section heading size */
+    margin: 15px 0; /* Space around section headings */
+}
+
+.content p {
+    font-size: 18px; /* Paragraph text size */
+    line-height: 1.6; /* Improved readability */
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+.content ul {
+    list-style-position: inside; /* Better alignment for list items */
+    padding-left: 0; /* Remove left padding */
+}
+
+.content li {
+    margin: 5px 0; /* Space between list items */
+}
