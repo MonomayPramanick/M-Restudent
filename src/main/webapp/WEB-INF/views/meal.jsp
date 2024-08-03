@@ -26,7 +26,6 @@
             width: 100%;
             max-width: 500px;
             box-sizing: border-box;
-            height: auto; /* Ensure full height of the container */
             margin: 20px;
         }
         h2 {
@@ -90,10 +89,39 @@
             margin-top: 20px;
             font-size: 18px;
         }
+        
+        /* Responsive Styles */
         @media (max-width: 768px) {
             .form-container {
                 padding: 20px;
                 margin: 10px;
+            }
+            h2 {
+                font-size: 20px; /* Smaller font size for headings */
+            }
+            .form-group input, .form-group select {
+                font-size: 12px; /* Smaller font size for inputs */
+                padding: 10px; /* Smaller padding for inputs */
+            }
+            .form-group input[type="submit"] {
+                font-size: 12px; /* Smaller font size for buttons */
+                padding: 12px; /* Smaller padding for buttons */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .form-container {
+                padding: 15px;
+                margin: 5px;
+            }
+            h2 {
+                font-size: 18px; /* Even smaller font size for headings */
+            }
+            .form-group input, .form-group select {
+                font-size: 12px; /* Smaller font size for inputs */
+            }
+            .form-group input[type="submit"] {
+                font-size: 12px; /* Smaller font size for buttons */
             }
         }
     </style>

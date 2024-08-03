@@ -24,7 +24,6 @@
             width: 100%;
             max-width: 600px;
             box-sizing: border-box;
-            height: auto; /* Ensure full height of the container */
         }
         h1 {
             text-align: center;
@@ -37,12 +36,12 @@
             margin-bottom: 8px;
             font-weight: bold;
             font-size: 14px;
-            color: #fff;/* White for better contrast */
+            color: #fff; /* White for better contrast */
         }
         input, select {
-            background-color: transparent;/* Fully transparent background */
-            border: 2px solid rgba(255, 255, 255, 0.7) /* Semi-transparent border */
-            color: #fff;/* White text color */
+            background-color: transparent; /* Fully transparent background */
+            border: 2px solid rgba(255, 255, 255, 0.7); /* Semi-transparent border */
+            color: #fff; /* White text color */
             width: calc(100% - 24px);
             padding: 12px;
             margin-bottom: 20px;
@@ -56,20 +55,20 @@
             box-shadow: 0 0 5px rgba(0, 123, 255, 0.7);
         }
         button {
-            background-color: #28a745;/* Changed button color to green */
-            border: 2px solid #28a745;/* Solid border matching button color */
-            color: #fff;/* White text color */
+            background-color: #28a745; /* Changed button color to green */
+            border: 2px solid #28a745; /* Solid border matching button color */
+            color: #fff; /* White text color */
             border-radius: 5px;
             cursor: pointer;
             font-size: 14px;
             transition: background-color 0.3s, border-color 0.3s;
             margin-top: 10px;
-            padding: 15px;/* Padding for buttons */
-            width: 100% /* Full width */
+            padding: 15px; /* Padding for buttons */
+            width: 100%; /* Full width */
         }
         button:hover {
-            background-color: #218838;/* Darker green on hover */
-            border-color: #218838;/* Darker border on hover */
+            background-color: #218838; /* Darker green on hover */
+            border-color: #218838; /* Darker border on hover */
         }
         .toggle-buttons {
             display: flex;
@@ -93,6 +92,36 @@
             background-color: rgba(51, 51, 51, 0.2); /* Light background on hover */
             border-color: #333; /* Darker border on hover */
         }
+
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 20px; /* Smaller font size for headings */
+            }
+            button {
+                font-size: 12px; /* Smaller font size for buttons */
+                padding: 10px; /* Smaller padding for buttons */
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 18px; /* Smaller font size for headings */
+            }
+            input, select {
+                font-size: 12px; /* Smaller font size for inputs */
+            }
+            button {
+                font-size: 12px; /* Smaller font size for buttons */
+                padding: 8px; /* Smaller padding for buttons */
+            }
+            .toggle-buttons button {
+                width: 80px; /* Smaller buttons for toggles */
+            }
+        }
     </style>
     <script>
         function showForm(formType) {
@@ -110,7 +139,6 @@
 </head>
 <body>
     <div class="container">
-        
         <div class="toggle-buttons">
             <button type="button" onclick="showForm('login')">Login</button>
             <button type="button" onclick="showForm('signIn')">Sign In</button>

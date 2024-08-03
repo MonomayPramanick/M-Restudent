@@ -23,7 +23,7 @@ public class CartDaoImpl implements CartDao {
 
     @Override
     public List<Cart> getallitem() {
-        return getCurrentSession().createQuery("from Item", Cart.class).list();
+        return getCurrentSession().createQuery("from Cart", Cart.class).list();
     }
 
     @Override

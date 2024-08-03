@@ -9,7 +9,6 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "Item") // Ensure this matches your actual table name in the database
 public class Cart {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
