@@ -9,7 +9,7 @@
     <title>M-Restudent</title>
     <link rel="stylesheet" href="resources/css/style.css">
 </head>
-<body style="background: rgba(0, 0, 0, 0.7) url('./resources/image/res3.jpg') center center fixed; background-size: cover; background-blend-mode: darken;">
+<body style="background: rgba(0, 0, 0, 0.7) url('./resources/image/res3.jpg') center center fixed; background-size: cover;">
     <div class="container">
         <h1>M-Restaurant</h1>
         <div class="navbar">

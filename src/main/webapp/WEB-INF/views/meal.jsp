@@ -139,13 +139,13 @@
             message.style.display = 'block';
             setTimeout(() => {
                 window.location.href = '/M-Restudent/index';
-            }, 3000); // Redirect after 3 seconds
+            }, 3000);
         }
 
         function handleSubmit(event) {
-            event.preventDefault();
-            // Assuming the form submission is successful
-            showMessage();
+            const form = event.target; // Get the form element
+            showMessage(); // Show success message
+            form.submit(); // Submit the form
         }
 
         document.addEventListener('DOMContentLoaded', function () {

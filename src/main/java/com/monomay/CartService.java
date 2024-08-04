@@ -25,7 +25,7 @@ public class CartService {
 
     @Transactional
     public Sign findingUser(String username) {
-        return cartDao.findingUser(username);
+        return cartDao.findByUsername(username);
     }
 
     @Transactional

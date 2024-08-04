@@ -29,7 +29,7 @@ public class CartController {
 
     @GetMapping("/userDetails")
     public String getUserDetails(String username, Model model) {
-        Sign user = cartService.findingUser(username);
+       Sign user = cartService.findingUser(username);
         model.addAttribute("user", user);
         System.out.println(user.toString());
         return "userDetails";

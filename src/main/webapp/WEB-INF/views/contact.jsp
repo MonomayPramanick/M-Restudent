@@ -12,12 +12,12 @@
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            color: #333; /* Dark text color */
-            background-color: #f4f4f4; /* Light background for contrast */
+            color: #333; 
+            background-color: #f4f4f4;
         }
 
         header {
-            background-color: #007bff; /* Primary color */
+            background-color: #007bff; 
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -81,7 +81,7 @@
         }
 
         .banner.contact-banner {
-            background: url('./resources/image/banner.jpg') no-repeat center center; /* Change to your banner image */
+            background: url('./resources/image/food.jpg') no-repeat center center; /* Change to your banner image */
             background-size: cover;
             padding: 60px 20px;
             color: #fff;

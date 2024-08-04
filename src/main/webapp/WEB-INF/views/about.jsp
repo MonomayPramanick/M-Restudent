@@ -22,7 +22,7 @@
         </div>
     </div>
     <div class="content">
-        <h1>About-Page</h1>
+        <h1>About</h1>
         
         <h2>Who We Are</h2>
         <p>

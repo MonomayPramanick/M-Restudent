@@ -1,4 +1,4 @@
-package com.monomay;
+ package com.monomay;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,13 +13,14 @@ public class Cart {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    
+    private String userName;
     private String mealName;
     private String village;
     private String areaName;
     private String payType;
-    @Column(name = "username")
-    private String userName;
+   
+   
 
     @ManyToOne
     private Sign user;
