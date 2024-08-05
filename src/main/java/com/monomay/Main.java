@@ -12,7 +12,7 @@ public class Main {
         // Set the context path and the location of the web app
         WebAppContext webAppContext = new WebAppContext();
         webAppContext.setContextPath("/");
-        webAppContext.setWar("target/M-Restudent-0.0.1-SNAPSHOT.war");
+        webAppContext.setWar("target/M-Restudent.jar");
 
         // Set the context on the server
         server.setHandler(webAppContext);
