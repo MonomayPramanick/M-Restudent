@@ -28,10 +28,10 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the JAR file from the build stage
-COPY --from=build /app/target/M-Restudent-*.war M-Restudent.war
+COPY --from=build /app/target/M-Restudent M-Restudent
 
 # Expose the application port
 EXPOSE 8081
 
 # Run the application
-CMD ["java", "-jar", "M-Restudent.war"]
+CMD ["java", "-jar", "M-Restudent"]
