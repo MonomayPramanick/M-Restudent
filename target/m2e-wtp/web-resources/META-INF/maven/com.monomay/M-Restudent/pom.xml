@@ -19,7 +19,7 @@
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13.2</version> <!-- Updated to a stable version -->
+            <version>4.13.2</version> <!-- Consider updating to JUnit 5 -->
             <scope>test</scope>
         </dependency>
         
@@ -48,7 +48,7 @@
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>2.11.0</version> <!-- Updated to a stable version -->
+            <version>2.11.0</version>
         </dependency>
 
         <!-- Spring ORM -->
@@ -62,14 +62,14 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-core</artifactId>
-            <version>5.6.11.Final</version> <!-- Updated to the latest stable version -->
+            <version>5.6.11.Final</version>
         </dependency>
 
         <!-- MySQL Driver -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.31</version> <!-- Updated to the latest stable version -->
+            <version>8.0.31</version>
             <scope>runtime</scope>
         </dependency>
 
@@ -127,7 +127,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.3.1</version> <!-- Updated to a more recent version -->
+                <version>3.3.1</version>
             </plugin>
         </plugins>
     </build>
