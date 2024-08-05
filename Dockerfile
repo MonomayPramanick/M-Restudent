@@ -21,17 +21,14 @@ COPY src ./src
 # Package the application
 RUN mvn package -DskipTests
 
-# Use a new image for the runtime
-FROM openjdk:17-jdk-slim
+# Use an official Jetty image as the runtime
+FROM jetty:9.4-jre11-slim
 
 # Set the working directory
-WORKDIR /app
+WORKDIR /var/lib/jetty/webapps
 
-# Copy the JAR file from the build stage
-COPY --from=build /app/M-Restudent.jar M-Restudent.jar
+# Copy the WAR file from the build stage
+COPY --from=build /app/target/M-Restudent.war ./root.war
 
 # Expose the application port
-EXPOSE 8081
-
-# Run the application
-CMD ["java", "-jar", "M-Restudent.jar"]
+EXPOSE 8080
