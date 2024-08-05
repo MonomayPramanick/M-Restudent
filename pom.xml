@@ -1,11 +1,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.srs.res</groupId>
-  <artifactId>srs.res</artifactId>
+  <groupId>com.monomay</groupId>
+  <artifactId>M-Restudent</artifactId>
   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
-  <name>srs.res Maven Webapp</name>
+  <name>M-Restudent Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
@@ -79,10 +79,11 @@
     </dependency>
 
     <dependency>
-    	<groupId>com.spring.mvc</groupId>
-    	<artifactId>springmvc4</artifactId>
-    	<version>0.0.1-SNAPSHOT</version>
-    </dependency>
+	    <groupId>com.spring.mvc</groupId>
+	    <artifactId>springmvc4</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+	</dependency>
+
    <dependency>
     	<groupId>org.springframework.security</groupId>
     	<artifactId>spring-security-core</artifactId>
@@ -102,6 +103,6 @@
   </dependencies>
 
   <build>
-    <finalName>srs.res</finalName>
+    <finalName>M-Restudent</finalName>
   </build>
 </project>
