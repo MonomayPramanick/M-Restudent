@@ -17,7 +17,7 @@
         }
 
         header {
-            background-color: #007bff; 
+            background-color:#8a6a5a; 
             color: #fff;
             padding: 20px 0;
             text-align: center;
@@ -136,7 +136,7 @@
         footer {
             text-align: center;
             padding: 15px 0;
-            background-color: #007bff; /* Primary color */
+            background-color:#8a6a5a; /* Primary color */
             color: #fff;
         }
 
@@ -197,10 +197,7 @@
                 <li><a href="contact">Contact</a></li>
                 <li><a href="sign">Sign-In</a></li>
             </ul>
-            <div class="search">
-                <input type="text" placeholder="Search here">
-                <button class="btn">Search</button>
-            </div>
+         
         </nav>
     </header>
 
